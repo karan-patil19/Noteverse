@@ -319,10 +319,10 @@ button:hover {
     height: auto;
 }
 .contact-content h3 {
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 10px; 
 }
 .contact-content h2 {
-    margin-bottom: 90px; /* Adjust as needed */
+    margin-bottom: 90px; 
 }
 .contact-content p {
     color:white;
@@ -330,5 +330,5 @@ button:hover {
 
 
 .contact-content p {
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px; 
 }
