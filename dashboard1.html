@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three-Pane Layout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="./dashboard.css">
 </head>
-
 <body>
     <div class="main-container">
         <aside class="sidebar">
-
+           
             <nav>
                 <h2>Noteverse</h2>
                 <div class="menu-heading">
@@ -20,7 +18,7 @@
                     <hr class="menu-line">
                 </div>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="#"><i class="fas fa-book"></i> Library</a></li>
                     <li><a href="#"><i class="fas fa-sticky-note"></i> Notes</a></li>
                     <li><a href="#"><i class="fas fa-cloud-upload-alt"></i> Upload</a></li>
@@ -36,147 +34,83 @@
         </aside>
         <div class="right-container">
             <header class="right-header">
-
+                
                 <div class="header-content">
                     <div class="welcome">
                         <p>Welcome</p>
                     </div>
                     <div class="search-bar">
                         <input type="text" placeholder="Search Books">
-                        <i class="fas fa-search search-icon"></i>
+                        <i class="fas fa-search search-icon"></i> 
                     </div>
                     <div class="user-profile">
-                        <p>John Doe</p>
-                        <img src="images/user1.gif" alt="User Avatar">
+                        <p>John Doe</p> 
+                        <img src="./images/user.gif" alt="User Avatar">
                     </div>
+                    
+                    <div class="sidebar-toggle">&#9776;</div>
                 </div>
             </header>
             <main class="main-content" id="bookList">
-
+                
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/book-cover.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/cather.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/gastsby.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/image.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/mocking.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-info">
+                    <div class="book-content">
+                        <img src="images/pride.png" alt="Book Cover">
+                        <div class="book-des">
+                            <p class="book-title">Steven Erikson</p>
+                            <p class="author-name">Reaper's Gale</p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
 
-    <script>
-        const books = [{
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "images/book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "book-cover.png"
-            }, {
-                title: "Steven Erikson",
-                author: "Reaper's Gale",
-                coverImage: "book-cover"
-            },
-
-        ];
-
-
-        const bookListContainer = document.getElementById("bookList");
-
-
-        books.forEach((book) => {
-
-            const bookInfoDiv = document.createElement("div");
-            bookInfoDiv.className = "book-info";
-
-            const coverImage = document.createElement("img");
-            coverImage.src = book.coverImage;
-            coverImage.alt = "Book Cover";
-
-            const bookDesDiv = document.createElement("div");
-            bookDesDiv.className = "book-des";
-
-            const bookTitle = document.createElement("p");
-            bookTitle.className = "book-title";
-            bookTitle.textContent = book.title;
-
-            const authorName = document.createElement("p");
-            authorName.className = "author-name";
-            authorName.textContent = book.author;
-
-
-            bookDesDiv.appendChild(bookTitle);
-            bookDesDiv.appendChild(authorName);
-
-            bookInfoDiv.appendChild(coverImage);
-            bookInfoDiv.appendChild(bookDesDiv);
-
-
-            bookListContainer.appendChild(bookInfoDiv);
-        });
-    </script>
+    <script src="./dashboard.js"></script>
 </body>
-
 </html>
